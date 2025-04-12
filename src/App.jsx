@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Hero from './sections/Hero'
 function App() {
   return (
-    <div>
-      <h1 className='text-4xl font-bold text-center'>Hello Tailwindcss</h1>
-    </div>
+    <>
+      <Hero />
+    </>
   )
 }
 
