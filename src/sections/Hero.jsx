@@ -1,5 +1,7 @@
 import React from 'react'
 import { words } from '../constants/index'
+import Button from '../components/Button'
+import HeroExperiance from '../components/HeroExperiance'
 function Hero() {
   return (
     <section id='hero' className='relative overflow-hidden'>
@@ -26,8 +28,23 @@ function Hero() {
                         <h1>into Real Projects</h1>
                         <h1>that Deliver Results</h1>
                     </div>
+                    <p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, nesciunt perspiciatis voluptas sapiente aliquam nobis. Pariatur cupiditate adipisci.</p>
+                    <Button  
+                    className='md:w-80 md:h-16 w-60 h-12'
+                    text='See my Work'
+                    id='button'
+                    />
                 </div>
             </header>
+
+            {/* RIGHT SIDE HERO 3D MODEL */}
+
+            <figure>
+                <div className='hero-3d-layout '>
+                    <HeroExperiance />
+                </div>
+            </figure>
+
         </div>
     </section>
   )
